@@ -17,15 +17,18 @@ class App extends React.Component {
   componentDidMount() {
     this.getChecklists()
   }
-  getChecklists () {
-    fetch('http://localhost:3000/checklists')
+  getChecklists = () => {
+    fetch('http://localhost:3001/checklists')
       .then(response => response.json())
-      .then(json => console.log(json))
+      .then(json => this.setState({checklists: json}))
       .catch(error => console.error(error))
   }
 
 render(){
   return (
+  <>
+    <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet"></link>
     <div className="App">
       <Header />
       <Time />
@@ -36,9 +39,9 @@ render(){
       <Checkin />
       <Footer />
     </div>
+  </>
   );
 }
 }
-
 
 export default App;
