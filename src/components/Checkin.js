@@ -4,7 +4,7 @@ import React from 'react'
 function Checkin(props) {
     return (
       <div>
-        <h4>Check In</h4>
+        <h3>Check In</h3>
             <p>How are you feeling right now?</p>
       </div>
     )
