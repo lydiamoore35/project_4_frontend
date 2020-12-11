@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header(props) {
     return (
-      <header>
+      <header className="adulting">
         <h1>ADULTING</h1>
       </header>
     )

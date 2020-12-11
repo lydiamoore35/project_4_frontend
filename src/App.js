@@ -18,7 +18,7 @@ class App extends React.Component {
     this.getChecklists()
   }
   getChecklists = () => {
-    fetch('http://localhost:3001/checklists')
+    fetch('http://localhost:3000/checklists')
       .then(response => response.json())
       .then(json => this.setState({checklists: json}))
       .catch(error => console.error(error))
