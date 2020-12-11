@@ -15,6 +15,7 @@
 - React
 - Node.js
 - Flexbox
+- Netlify
 
 ### Approach Taken
 - wireframe 
@@ -23,9 +24,9 @@
 - set up components
 - import all components to app.js
 - create a fetch request to allow the front end to consume the created api and pull seed data to the console
-- adjust for CORS so that frontend can pull from created backend api
 - add all handle functions for full CRUD
 - get creative with css
+- deployed on Netlify
 
 ### Unsolved Problems
 -  
