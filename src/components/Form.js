@@ -11,13 +11,14 @@ class Form extends React.Component {
   };
 
   handleSubmit = (event) => {
-    console.log("running");
+    console.log("working");
     event.preventDefault();
 
     const { task } = this.state;
     const checklist = {
       task: task
     };
+    console.log(task)
 
     if (this.props.checklist) checklist.id = this.props.checklist.id;
 
@@ -41,8 +42,8 @@ class Form extends React.Component {
           name={"task"}
           placeholder={"Task Description"}
           type={"text"}
-        //   value={this.state.title}
-        //   id={"title"}
+          value={this.state.task}
+          id={"task"}
         />
         <input
           type="submit"

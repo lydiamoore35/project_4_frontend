@@ -3,7 +3,7 @@ import Header from './components/Header.js'
 import Time from './components/Time.js'
 import Goal from './components/Goal.js'
 import Appointments from './components/Appointments.js'
-import Checklist from './components/Checklist.js'
+import Checklists from './components/Checklists.js'
 import Errands from './components/Errands.js'
 import Checkin from './components/Checkin.js'
 import Footer from './components/Footer.js'
@@ -86,7 +86,9 @@ class App extends React.Component {
         <Header />
         <Time />
         <Goal />
-        <Checklist checklists={this.state.checklists} handleSubmit={this.handleAdd} handleDelete={this.handleDelete} handleUpdate={this.handleUpdate}/>
+        <Checklists 
+        checklists={this.state.checklists}
+        handleSubmit={this.handleAdd}  handleDelete={this.handleDelete} handleUpdate={this.handleUpdate}/>
         <Errands />
         <Appointments />
         <Checkin />
