@@ -57,10 +57,10 @@ form {
   border: 2px cornsilk dashed;
   border-width: 2px;
   border-radius: 5%;
-  margin: -3% 0% 2% 15%;
+  margin: -3% 0% 2% 7%;
   font-size: 20px;
-  width: 250px;
-  height: 75px;
+  width: 400px;
+  height: 80px;
 }
 .goal {
   display: flex;
@@ -71,7 +71,7 @@ form {
   border: 10px cornsilk dashed;
   border-width: 2px;
   border-radius: 5%;
-  margin: -3% 0% -5% 9.5%;
+  margin: -3% 0% -5% 2%;
   font-size: 20px;
   width: 400px;
   height: 80px;
@@ -127,7 +127,7 @@ form {
   border-width: 2px;
   border-radius: 5%;
   margin: 1%;
-  font-size: 20px;
+  font-size: 25px;
 }
 .question {
   display: flex;
@@ -137,7 +137,7 @@ form {
   margin-bottom: 2%;
   background-color: #f18973;
   margin: 1%;
-  font-size: 15px;
+  font-size: 20px;
 }
 .footer {
   display: flex;
