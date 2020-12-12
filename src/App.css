@@ -137,8 +137,9 @@ form {
   margin: 1%;
   font-size: 25px;
   width: 400px;
-  margin-left: 28%;
+  margin-left: 27%;
   padding: 2%;
+  margin-top: 2%;
 }
 .question {
   display: flex;
@@ -149,6 +150,7 @@ form {
   background-color: #f18973;
   margin: 1%;
   font-size: 20px;
+  margin-left: 12%;
 }
 .footer {
   display: flex;
