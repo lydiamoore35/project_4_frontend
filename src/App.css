@@ -4,8 +4,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
-  margin: -2% 5% -8% 5%;
+  font-size: 45px;
+  margin: -5% 5% -11% 4%;
 }
 .submit {
   display: flex;
@@ -15,6 +15,8 @@
   margin-top: 20%;
   width: 100px;
   padding: 2%;
+  font-family: 'Nerko One';
+  font-size: 15px;
 }
 .text {
   display: flex;
@@ -23,13 +25,15 @@
   flex-wrap: wrap;
   margin-top: 20%;
   width: 300px;
+  height: 32px;
 }
 form {
   display: flex;
   display: inline-block;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 10%;
+  margin-left: 9%;
+  margin-top: -1.5%;
 }
 .definition {
   display: flex;
@@ -38,7 +42,7 @@ form {
   justify-content: center;
   align-content: center;
   margin: 1%;
-  margin-left: 3%;
+  margin-left: 2%;
   font-size: 20px;
   text-align: justify;
   padding: 2%;
@@ -50,12 +54,12 @@ form {
   justify-content: center;
   align-content: center;
   background-color: #f18973;
-  border: 10px cornsilk dotted;
+  border: 2px cornsilk dashed;
   border-width: 2px;
   border-radius: 5%;
-  margin: 8% 0% 3% 5%;
+  margin: -3% 0% 2% 15%;
   font-size: 20px;
-  width: 170px;
+  width: 250px;
   height: 75px;
 }
 .goal {
@@ -64,13 +68,13 @@ form {
   flex-wrap: wrap;
   justify-content: center;
   background-color: #f18973;
-  border: 10px cornsilk dotted;
+  border: 10px cornsilk dashed;
   border-width: 2px;
   border-radius: 5%;
-  margin: 1%;
+  margin: -3% 0% -5% 9.5%;
   font-size: 20px;
-  width: 320px;
-  height: 100px;
+  width: 400px;
+  height: 80px;
 }
 .checklist {
   display: flex;
@@ -86,7 +90,8 @@ form {
   border-radius: 5%;
   margin: 1%;
 }
-.errands {
+/* save for componenets to be added  */
+/* .errands {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -111,7 +116,7 @@ form {
   border-width: 2px;
   border-radius: 5%;
   margin: 1%;
-}
+} */
 .checkin {
   display: flex;
   flex-direction: row;
@@ -165,6 +170,8 @@ form {
 button {
   padding: 2%;
   margin: 2%;
+  font-family: 'Nerko One';
+  font-size: 15px;
 }
 .App-link {
   color: #61dafb;

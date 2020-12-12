@@ -97,7 +97,7 @@ class App extends React.Component {
         <form onSubmit= {this.handleAdd}>
           <input className="text" type="text" value={this.state.taskValue}
           onChange={this.handleTaskChange}/>
-          <input className="submit" type="submit" value="addTask"/>
+          <input className="submit" type="submit" value="Add Task"/>
         </form>
         <Definition />
         <Time />
