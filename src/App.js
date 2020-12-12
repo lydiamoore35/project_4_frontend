@@ -14,12 +14,20 @@ import './App.css';
 class App extends React.Component {
   state = {
     checklists: [],
+    taskValue: ""
   };
 
-  handleAdd = (event, formInputs) => {
+  handleTaskChange = (event) => {
+    console.log(event.target.value)
+    this.setState({taskValue:event.target.value})
+  }
+
+  handleAdd = (event) => {
     event.preventDefault();
+    const formInput = {task:this.state.taskValue}
+    console.log("lydia")
     fetch("http://localhost:3000/checklists", {
-      body: JSON.stringify(formInputs),
+      body: JSON.stringify(formInput),
       method: "POST",
       headers: {
         Accept: "application/json, text/plain, */*",
@@ -86,12 +94,18 @@ class App extends React.Component {
       <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet"></link>
       <div className="App">
         <Header />
-        <Definition />
         <Time />
+        <form onSubmit= {this.handleAdd}>
+          <input type="text" value={this.state.taskValue}
+          onChange={this.handleTaskChange}/>
+          <input type="submit" value="addTask"/>
+        </form>
+        
+        <Definition />
         <Goal />
         <Checklists 
         checklists={this.state.checklists}
-        handleSubmit={this.handleAdd}  handleDelete={this.handleDelete} handleUpdate={this.handleUpdate}/>
+         handleDelete={this.handleDelete} handleUpdate={this.handleUpdate}/>
         <Checkin />
         <Footer />
       </div>

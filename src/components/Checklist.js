@@ -10,6 +10,13 @@ class Checklist extends React.Component {
     this.setState({ formVisible: !this.state.formVisible });
   };
 
+  handleAdd = (event, checklist) => {
+    console.log('first step')
+    console.log(event.target)
+    this.props.handleAdd(event, checklist);
+    this.toggleForm();
+  };
+
   handleUpdate = (event, checklist) => {
     console.log("update running");
     this.props.handleUpdate(event, checklist);
@@ -30,7 +37,6 @@ class Checklist extends React.Component {
         ) : (
           <div className="checklist">
             <h1>Task:</h1>
-            <button handleSubmit={this.handleSubmit}>Add Task</button>
             <h3>{checklist.task}</h3>
             <button onClick={() => handleDelete(checklist)}>Delete task</button>
             <button onClick={this.toggleForm}>Edit this task</button>

@@ -5,7 +5,7 @@ function Checkin(props) {
     return (
       <div className="checkin">
         <h3>Check In</h3>
-            <p>How are you feeling right now?</p>
+            <p className="question">How are you feeling right now?</p>
       </div>
     )
 }
