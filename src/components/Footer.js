@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer(props) {
     return (
-      <footer>Copyright © 2020 created by Lydia Moore. All rights reserved.</footer>
+      <div className="footer">Copyright © 2020 created by Lydia Moore. All rights reserved.</div>
     )
 }
 

@@ -94,14 +94,13 @@ class App extends React.Component {
       <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet"></link>
       <div className="App">
         <Header />
-        <Time />
         <form onSubmit= {this.handleAdd}>
-          <input type="text" value={this.state.taskValue}
+          <input className="text" type="text" value={this.state.taskValue}
           onChange={this.handleTaskChange}/>
-          <input type="submit" value="addTask"/>
+          <input className="submit" type="submit" value="addTask"/>
         </form>
-        
         <Definition />
+        <Time />
         <Goal />
         <Checklists 
         checklists={this.state.checklists}
