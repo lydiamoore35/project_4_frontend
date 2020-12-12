@@ -5,7 +5,7 @@ function Checklists(props) {
   const { handleUpdate, checklists, handleDelete } = props;
   return (
     <div>
-      {checklists.map((checklist) => (
+      {checklists && checklists.map((checklist) => (
         <Checklist
           key={checklist.id}
           checklist={checklist}

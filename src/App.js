@@ -25,7 +25,6 @@ class App extends React.Component {
   handleAdd = (event) => {
     event.preventDefault();
     const formInput = {task:this.state.taskValue}
-    console.log("lydia")
     fetch("https://adulting-moore-api.herokuapp.com/", {
       body: JSON.stringify(formInput),
       method: "POST",
