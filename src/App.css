@@ -123,7 +123,7 @@ form {
   flex-wrap: wrap;
   justify-content: center;
   background-color: #f18973;
-  border: 10px cornsilk dotted;
+  border: 10px cornsilk dashed;
   border-width: 2px;
   border-radius: 5%;
   margin: 1%;
@@ -172,6 +172,13 @@ button {
   margin: 2%;
   font-family: 'Nerko One';
   font-size: 15px;
+  background-color: white;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+button:hover{
+  background-color: black;
+  color: white;
 }
 .App-link {
   color: #61dafb;
