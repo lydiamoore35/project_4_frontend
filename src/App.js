@@ -1,10 +1,12 @@
+// models to be added later //
+// import Errands from './components/Errands.js'
+// import Appointments from './components/Appointments.js'
 import React from 'react'
 import Header from './components/Header.js'
+import Definition from './components/Definition.js'
 import Time from './components/Time.js'
 import Goal from './components/Goal.js'
-import Appointments from './components/Appointments.js'
 import Checklists from './components/Checklists.js'
-import Errands from './components/Errands.js'
 import Checkin from './components/Checkin.js'
 import Footer from './components/Footer.js'
 import './App.css';
@@ -84,13 +86,12 @@ class App extends React.Component {
       <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet"></link>
       <div className="App">
         <Header />
+        <Definition />
         <Time />
         <Goal />
         <Checklists 
         checklists={this.state.checklists}
         handleSubmit={this.handleAdd}  handleDelete={this.handleDelete} handleUpdate={this.handleUpdate}/>
-        <Errands />
-        <Appointments />
         <Checkin />
         <Footer />
       </div>

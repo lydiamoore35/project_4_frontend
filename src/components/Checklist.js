@@ -29,10 +29,11 @@ class Checklist extends React.Component {
           />
         ) : (
           <div className="checklist">
-            <h1>Checklist:</h1>
+            <h1>Task:</h1>
+            <button handleSubmit={this.handleSubmit}>Add Task</button>
             <h3>{checklist.task}</h3>
-            <button onClick={() => handleDelete(checklist)}>X</button>
-            <button onClick={this.toggleForm}>Edit this Entry</button>
+            <button onClick={() => handleDelete(checklist)}>Delete task</button>
+            <button onClick={this.toggleForm}>Edit this task</button>
           </div>
         )}
       </>
