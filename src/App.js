@@ -44,7 +44,7 @@ class App extends React.Component {
   };
 
   handleDelete = (deletedChecklist) => {
-    fetch(`http://localhost:3000/checklists/${deletedChecklist.id}`, {
+    fetch(`https://adulting-moore-api.herokuapp.com/${deletedChecklist.id}`, {
       method: "DELETE",
       headers: {
         Accept: "application/json, text/plain, */*",
@@ -63,7 +63,7 @@ class App extends React.Component {
   handleUpdate = (event, formInputs) => {
     event.preventDefault();
     console.log("you got this");
-    fetch(`http://localhost:3000/checklists/${formInputs.id}`, {
+    fetch(`https://adulting-moore-api.herokuapp.com/${formInputs.id}`, {
       body: JSON.stringify(formInputs),
       method: "PUT",
       headers: {
