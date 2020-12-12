@@ -26,7 +26,7 @@ class App extends React.Component {
     event.preventDefault();
     const formInput = {task:this.state.taskValue}
     console.log("lydia")
-    fetch("http://localhost:3000/checklists", {
+    fetch("https://adulting-moore-api.herokuapp.com/", {
       body: JSON.stringify(formInput),
       method: "POST",
       headers: {
@@ -81,7 +81,7 @@ class App extends React.Component {
     this.getChecklists()
   }
   getChecklists = () => {
-    fetch('http://localhost:3000/checklists')
+    fetch('https://adulting-moore-api.herokuapp.com/')
       .then(response => response.json())
       .then(json => this.setState({checklists: json}))
       .catch(error => console.error(error))
