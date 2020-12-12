@@ -25,7 +25,7 @@ class App extends React.Component {
   handleAdd = (event) => {
     event.preventDefault();
     const formInput = {task:this.state.taskValue}
-    fetch("https://adulting-moore-api.herokuapp.com/", {
+    fetch("https://adulting-moore-api.herokuapp.com/checklists", {
       body: JSON.stringify(formInput),
       method: "POST",
       headers: {
@@ -43,7 +43,7 @@ class App extends React.Component {
   };
 
   handleDelete = (deletedChecklist) => {
-    fetch(`https://adulting-moore-api.herokuapp.com/${deletedChecklist.id}`, {
+    fetch(`https://adulting-moore-api.herokuapp.com/checklists/${deletedChecklist.id}`, {
       method: "DELETE",
       headers: {
         Accept: "application/json, text/plain, */*",
@@ -62,7 +62,7 @@ class App extends React.Component {
   handleUpdate = (event, formInputs) => {
     event.preventDefault();
     console.log("you got this");
-    fetch(`https://adulting-moore-api.herokuapp.com/${formInputs.id}`, {
+    fetch(`https://adulting-moore-api.herokuapp.com/checklists/${formInputs.id}`, {
       body: JSON.stringify(formInputs),
       method: "PUT",
       headers: {
@@ -80,7 +80,7 @@ class App extends React.Component {
     this.getChecklists()
   }
   getChecklists = () => {
-    fetch('https://adulting-moore-api.herokuapp.com/')
+    fetch('https://adulting-moore-api.herokuapp.com/checklists')
       .then(response => response.json())
       .then(json => this.setState({checklists: json}))
       .catch(error => console.error(error))
